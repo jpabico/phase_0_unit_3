@@ -18,7 +18,26 @@ I think there is a 1-to-many relationship between users and tweets.  Each user i
 ![twitter schema](/week_7/imgs/twitter_schema.jpg)
 
 ## Release 4: SQL Statements
-<!-- Include your SQL Statements. How can you make markdown files show blocks of code? -->
+# messages from a particular user
+select tweet_string
+from tweets
+where id = 'BobbyDude'
+
+# a specific message from a specific user
+select content
+from tweet_messages
+where from_user = 'AbbyBrown' 
+and created_on = 123407092011
+
+# a picture associated with a message
+select photo
+from pictures join tweet_messages on (pictures.from_user = tweet_messages.from_user)
+where pictures.created_at = tweet_messages.created_on
+
+# location from where picture was posted
+select coordinates
+from location join pictures on (user_id = from_user)
+where locations.updated_at = pictures.create_at
 
 ## Release 5: Reflection
-<!-- Be sure to add your reflection here!!! -->
+This was a neat challenge.  It allowed me to see first hand how Twitter worked (I had never used Twitter before doing this challenge) and how SQL can be applied.  It almost seems too simple of an idea.  I'm sure there's a lot more to it than I realize, but the basic idea is understandable.  Though I don't find SQL that difficult to pick up, I do feel like I need more practice with it, especially with JOIN statements and nested queries.  
