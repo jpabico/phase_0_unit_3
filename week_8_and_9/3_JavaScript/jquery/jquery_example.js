@@ -7,6 +7,7 @@ $('body').css({'background-color': 'pink'})
  
 //RELEASE 1:
   //Add code here to select elements of the DOM 
+
  
  
 //RELEASE 2: 
@@ -25,3 +26,5 @@ $('body').css({'background-color': 'pink'})
  
  
 })  // end of the document.ready function: do not remove or write DOM manipulation below this.
+
+var bodyElement = $('body')
