@@ -19,16 +19,44 @@ var scores = [ [80, 70, 70, 100],
                [100, 90, 95, 85] ]
 
 
-
-
-
-
 // __________________________________________
 // Write your code below.
 
+
+// var average = function(array_of_scores) {
+//   var total = 0;
+//   for (var i=0 ; i < array_of_scores.length ; i++) {
+//     total += array_of_scores[i];
+//   }
+//   return total / array_of_scores.length;
+// };
+
+// var gradebook = {};
+
+// for (var j=0 ; j < students.length ; j++) {
+//   gradebook[students[j]] = {};
+//   gradebook[students[j]].testScores = scores[j];
+// };
+
+// gradebook.addScore = function(name, score) {
+//   gradebook[name].testScores.push(score);
+// };
+
+// gradebook.getAverage = function(name) {
+//   var return_average = average(gradebook[name].testScores);
+//   return return_average;
+// };
+
+// __________________________________________
+// Refactored Solution
+
+//  I refactored my initial solution along the way, so there is little 
+// additional refactoring that I can think of at this time.
+//  All I did was add indentation and spacing for readability.
+
 var average = function(array_of_scores) {
-var total = 0;
-  for (var i=0 ; i < array_of_scores.length ; i++) {
+  var total = 0;
+  for (var i = 0 ; i < array_of_scores.length ; i++) {
     total += array_of_scores[i];
   }
   return total / array_of_scores.length;
@@ -36,36 +64,32 @@ var total = 0;
 
 var gradebook = {};
 
-for (var j=0 ; j < students.length ; j++) {
+for (var j = 0 ; j < students.length ; j++) {
   gradebook[students[j]] = {};
   gradebook[students[j]].testScores = scores[j];
 };
 
 gradebook.addScore = function(name, score) {
-gradebook[name].testScores.push(score);
-
+  gradebook[name].testScores.push(score);
 };
 
 gradebook.getAverage = function(name) {
   var return_average = average(gradebook[name].testScores);
   return return_average;
-
 };
-
-// __________________________________________
-// Refactored Solution
-
-
-
-
-
-
 
 
 // __________________________________________
 // Reflect
 
-
+// This was a nice challenge for review.  I didn't realize how much
+// Javascript I had forgotten until now.  As I reviewed, things 
+// started to come back to me.  This would have only taken me half 
+// the time a few weeks back.  Now I'm starting to mix up my Javascript 
+// with Ruby (again!).  For example, I kept thinking about #zip in Ruby 
+// while I was trying to make a hash from 2 arrays in Javascript.  I 
+// just need more practice with both languages so I can feel more 
+// comfortable with them.
 
 
 
