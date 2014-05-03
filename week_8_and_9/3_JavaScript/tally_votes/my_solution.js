@@ -1,6 +1,6 @@
-// U3.W8-9: Gradebook from Names and Scores
+/// U3.W8-9: Gradebook from Names and Scores
 
-// I worked on this challenge [by myself, with:]
+// I worked on this challenge by myself
 
 // These are the votes cast by each student. Do not alter these objects here.
 var votes = {
@@ -39,6 +39,30 @@ var voteCount = {
   secretary: {},
   treasurer: {}
 }
+
+var key_array = [];
+var value_array = [];
+for (var i in votes) {
+    key_array.push(i);
+    value_array.push(votes[i]);
+}
+
+var office_array = [];
+var candidate_array=[];
+for (var j = 0; j < value_array.length; j++) {
+    for (var k in value_array[j]) {
+        office_array.push(k);
+        candidate_array.push(value_array[j][k]);
+    }
+}
+
+console.log(office_array);
+console.log(candidate_array);
+
+
+// separate office arrays?  push multiples of the candidate array into it?
+// example, give index i, then i % 4 == 0 (president), == 1 (vp), etc
+// see week 3 p 21 of DBC journal
 
 /* The name of each student receiving a vote for an office should become a property 
 of the respective office in voteCount.  After Alex's votes have been tallied, 
