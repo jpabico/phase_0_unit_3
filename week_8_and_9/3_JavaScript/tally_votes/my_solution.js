@@ -84,166 +84,207 @@ var officers = {
 // __________________________________________
 // Initial Solution
 
-var key_array = [];
-var value_array = [];
-for (var i in votes) {
-    key_array.push(i);
-    value_array.push(votes[i]);
-}
+// var key_array = [];
+// var value_array = [];
+// for (var i in votes) {
+//     key_array.push(i);
+//     value_array.push(votes[i]);
+// }
 
-var office_array = [];
-var candidate_array=[];
-for (var j = 0; j < value_array.length; j++) {
-    for (var k in value_array[j]) {
-        office_array.push(k);
-        candidate_array.push(value_array[j][k]);
-    }
-}
-
-
-var president_array = [];
-var vp_array = [];
-var secretary_array = [];
-var treasurer_array = [];
-
-for (var m = 0; m < value_array.length; m++) {
-  president_array.push(value_array[m]['president']);
-  vp_array.push(value_array[m]['vicePresident']);
-  secretary_array.push(value_array[m]['secretary']);
-  treasurer_array.push(value_array[m]['treasurer']);
-}
-
-for (var m = 0; m < value_array.length; m++) {
-  voteCount['president'][president_array[m]] = 0;
-}
-
-for (var m = 0; m < value_array.length; m++) {
-  voteCount['president'][president_array[m]] += 1;
-}
-
-for (var m = 0; m < value_array.length; m++) {
-  voteCount['vicePresident'][vp_array[m]] = 0;
-}
-
-for (var m = 0; m < value_array.length; m++) {
-  voteCount['vicePresident'][vp_array[m]] += 1;
-}
-
-for (var m = 0; m < value_array.length; m++) {
-  voteCount['secretary'][secretary_array[m]] = 0;
-}
-
-for (var m = 0; m < value_array.length; m++) {
-  voteCount['secretary'][secretary_array[m]] += 1;
-}
-
-for (var m = 0; m < value_array.length; m++) {
-  voteCount['treasurer'][treasurer_array[m]] = 0;
-}
-
-for (var m = 0; m < value_array.length; m++) {
-  voteCount['treasurer'][treasurer_array[m]] += 1;
-}
+// var office_array = [];
+// var candidate_array=[];
+// for (var j = 0; j < value_array.length; j++) {
+//     for (var k in value_array[j]) {
+//         office_array.push(k);
+//         candidate_array.push(value_array[j][k]);
+//     }
+// }
 
 
-var president_keys = [];
-var president_vote_counts = [];
+// var president_array = [];
+// var vp_array = [];
+// var secretary_array = [];
+// var treasurer_array = [];
 
-for (var key in voteCount['president']) {
-  president_keys.push(key);
-  president_vote_counts.push(voteCount['president'][key]);
-}
+// for (var m = 0; m < value_array.length; m++) {
+//   president_array.push(value_array[m]['president']);
+//   vp_array.push(value_array[m]['vicePresident']);
+//   secretary_array.push(value_array[m]['secretary']);
+//   treasurer_array.push(value_array[m]['treasurer']);
+// }
 
-console.log(president_keys);
-console.log(president_vote_counts);
+// for (var m = 0; m < value_array.length; m++) {
+//   voteCount['president'][president_array[m]] = 0;
+// }
 
-var most_votes = president_keys[0];
-var max_votes = president_vote_counts[0];
+// for (var m = 0; m < value_array.length; m++) {
+//   voteCount['president'][president_array[m]] += 1;
+// }
 
-for (var m = 1; m <=president_keys.length; m++) {
-  if (president_vote_counts[m] > max_votes) {
-    most_votes = president_keys[m];
-    max_votes = president_vote_counts[m];
-  }
-}
+// for (var m = 0; m < value_array.length; m++) {
+//   voteCount['vicePresident'][vp_array[m]] = 0;
+// }
 
-officers['president'] = most_votes;
+// for (var m = 0; m < value_array.length; m++) {
+//   voteCount['vicePresident'][vp_array[m]] += 1;
+// }
 
-var vp_keys = [];
-var vp_vote_counts = [];
+// for (var m = 0; m < value_array.length; m++) {
+//   voteCount['secretary'][secretary_array[m]] = 0;
+// }
 
-for (var key in voteCount['vicePresident']) {
-  vp_keys.push(key);
-  vp_vote_counts.push(voteCount['vicePresident'][key]);
-}
+// for (var m = 0; m < value_array.length; m++) {
+//   voteCount['secretary'][secretary_array[m]] += 1;
+// }
 
-most_votes = vp_keys[0];
-max_votes = vp_vote_counts[0];
+// for (var m = 0; m < value_array.length; m++) {
+//   voteCount['treasurer'][treasurer_array[m]] = 0;
+// }
 
-for (var m = 1; m <= vp_keys.length; m++) {
-  if (vp_vote_counts[m] > max_votes) {
-    most_votes = vp_keys[m];
-    max_votes = vp_vote_counts[m];
-  }
-}
+// for (var m = 0; m < value_array.length; m++) {
+//   voteCount['treasurer'][treasurer_array[m]] += 1;
+// }
 
-officers['vicePresident'] = most_votes;
 
-var secretary_keys = [];
-var secretary_vote_counts = [];
+// var president_keys = [];
+// var president_vote_counts = [];
 
-for (var key in voteCount['secretary']) {
-  secretary_keys.push(key);
-  secretary_vote_counts.push(voteCount['secretary'][key]);
-}
+// for (var key in voteCount['president']) {
+//   president_keys.push(key);
+//   president_vote_counts.push(voteCount['president'][key]);
+// }
 
-most_votes = secretary_keys[0];
-max_votes = secretary_vote_counts[0];
+// var most_votes = president_keys[0];
+// var max_votes = president_vote_counts[0];
 
-for (var m = 1; m <=secretary_keys.length; m++) {
-  if (secretary_vote_counts[m] > max_votes) {
-    most_votes = secretary_keys[m];
-    max_votes = secretary_vote_counts[m];
-  }
-}
+// for (var m = 1; m <=president_keys.length; m++) {
+//   if (president_vote_counts[m] > max_votes) {
+//     most_votes = president_keys[m];
+//     max_votes = president_vote_counts[m];
+//   }
+// }
 
-officers['secretary'] = most_votes;
+// officers['president'] = most_votes;
 
-var treasurer_keys = [];
-var treasurer_vote_counts = [];
+// var vp_keys = [];
+// var vp_vote_counts = [];
 
-for (var key in voteCount['treasurer']) {
-  treasurer_keys.push(key);
-  treasurer_vote_counts.push(voteCount['treasurer'][key]);
-}
+// for (var key in voteCount['vicePresident']) {
+//   vp_keys.push(key);
+//   vp_vote_counts.push(voteCount['vicePresident'][key]);
+// }
 
-most_votes = treasurer_keys[0];
-max_votes = treasurer_vote_counts[0];
+// most_votes = vp_keys[0];
+// max_votes = vp_vote_counts[0];
 
-for (var m = 1; m <=treasurer_keys.length; m++) {
-  if (treasurer_vote_counts[m] > max_votes) {
-    most_votes = treasurer_keys[m];
-    max_votes = treasurer_vote_counts[m];
-  }
-}
+// for (var m = 1; m <= vp_keys.length; m++) {
+//   if (vp_vote_counts[m] > max_votes) {
+//     most_votes = vp_keys[m];
+//     max_votes = vp_vote_counts[m];
+//   }
+// }
 
-officers['treasurer'] = most_votes;
+// officers['vicePresident'] = most_votes;
+
+// var secretary_keys = [];
+// var secretary_vote_counts = [];
+
+// for (var key in voteCount['secretary']) {
+//   secretary_keys.push(key);
+//   secretary_vote_counts.push(voteCount['secretary'][key]);
+// }
+
+// most_votes = secretary_keys[0];
+// max_votes = secretary_vote_counts[0];
+
+// for (var m = 1; m <=secretary_keys.length; m++) {
+//   if (secretary_vote_counts[m] > max_votes) {
+//     most_votes = secretary_keys[m];
+//     max_votes = secretary_vote_counts[m];
+//   }
+// }
+
+// officers['secretary'] = most_votes;
+
+// var treasurer_keys = [];
+// var treasurer_vote_counts = [];
+
+// for (var key in voteCount['treasurer']) {
+//   treasurer_keys.push(key);
+//   treasurer_vote_counts.push(voteCount['treasurer'][key]);
+// }
+
+// most_votes = treasurer_keys[0];
+// max_votes = treasurer_vote_counts[0];
+
+// for (var m = 1; m <=treasurer_keys.length; m++) {
+//   if (treasurer_vote_counts[m] > max_votes) {
+//     most_votes = treasurer_keys[m];
+//     max_votes = treasurer_vote_counts[m];
+//   }
+// }
+
+// officers['treasurer'] = most_votes;
 
 
 // __________________________________________
 // Refactored Solution
 
 
+var votes_value_array = [];
+for (var i in votes) {
+  votes_value_array.push(votes[i]);
+}
 
+var office_array = ['president', 'vicePresident', 'secretary', 'treasurer'];
+var candidate_array = [[],[],[],[]];
 
+for (var m = 0; m < votes_value_array.length; m++) {
+  for (var i = 0; i < office_array.length; i++) {
+    candidate_array[i].push(votes_value_array[m][office_array[i]]);
+    if (voteCount[office_array[i]][candidate_array[i][m]] != undefined) {
+      voteCount[office_array[i]][candidate_array[i][m]] += 1;
+    } else {
+      voteCount[office_array[i]][candidate_array[i][m]] = 1;
+    }
+  }
+}
+
+for (var i = 0; i < office_array.length; i++) {
+  var voteCount_keys = [];
+  var voteCount_values = [];
+
+  for (var key in voteCount[office_array[i]]) {
+    voteCount_keys.push(key);
+    voteCount_values.push(voteCount[office_array[i]][key]);
+  }
+
+  var most_votes = voteCount_keys[0];
+  var max_votes = voteCount_values[0];
+
+  for (var m = 1; m <= voteCount_keys.length; m++) {
+    if (voteCount_values[m] > max_votes) {
+      officers[office_array[i]] = voteCount_keys[m];
+      max_votes = voteCount_values[m];
+    }
+  }
+}
 
 
 // __________________________________________
 // Reflection
 
-
-
-
+// Against all best practices in programming, I repeated my code NUMEROUS times
+// in this challenge in my initial solution.  I definitely had to do some more 
+// research to get my code down to a manageable length and improve its 
+// readability.  Overall, I thought this was a fun challenge in terms of 
+// getting that "good feeling" when you accomplish something big.  To me, 
+// this seemed big (mostly because I broke the D.R.Y rule).  I learned some neat 
+// tricks along the way such as how to extract just the keys or just the 
+// values of a hash in Javascript.  But once again, I found myself mixing up 
+// methods and syntax from Ruby.  In the end, I was able to refactor my code 
+// to a fourth of the original length (what do you expect when you remove 
+// all the repetition?).
 
 
 // __________________________________________
