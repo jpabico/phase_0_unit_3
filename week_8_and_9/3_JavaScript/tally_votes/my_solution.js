@@ -72,6 +72,14 @@ var officers = {
 
 // Pseudocode
 
+// break the votes hash into 2 arrays that represent the keys and values;
+// any of those arrays that contain hashes should also be broken down 
+//   into 2 arrays that represnt the keys and values;
+// compare the number of votes in the "values" array for each office 
+//   to find the max value;
+// push those "values" into the vote count hash;
+// match that value to the corresponding element in its "key" array;
+// push those "key" values into the officers hash;
 
 // __________________________________________
 // Initial Solution
@@ -92,13 +100,6 @@ for (var j = 0; j < value_array.length; j++) {
     }
 }
 
-// console.log(key_array);  // people who voted
-// console.log(value_array); // list of who they voted for
-// console.log(office_array);
-// console.log(candidate_array);
-
-// console.log(value_array[0]['president']);
-// console.log(value_array[20]['secretary']);
 
 var president_array = [];
 var vp_array = [];
@@ -112,11 +113,6 @@ for (var m = 0; m < value_array.length; m++) {
   treasurer_array.push(value_array[m]['treasurer']);
 }
 
-// president_array.each {|element| voteCount['president'][element] +=1}
-// vp_array.each {|element| voteCount['vicePresident'][element] +=1}
-// secretary_array.each {|element| voteCount['secretary'][element] +=1}
-// treasurer_array.each {|element| voteCount['treasurer'][element] +=1}
-
 for (var m = 0; m < value_array.length; m++) {
   voteCount['president'][president_array[m]] = 0;
 }
@@ -124,9 +120,6 @@ for (var m = 0; m < value_array.length; m++) {
 for (var m = 0; m < value_array.length; m++) {
   voteCount['president'][president_array[m]] += 1;
 }
-
-// console.log(president_array);
-// console.log(voteCount);
 
 for (var m = 0; m < value_array.length; m++) {
   voteCount['vicePresident'][vp_array[m]] = 0;
@@ -153,8 +146,6 @@ for (var m = 0; m < value_array.length; m++) {
 }
 
 
-// console.log(Object.keys(voteCount['president']).length);
-
 var president_keys = [];
 var president_vote_counts = [];
 
@@ -178,7 +169,6 @@ for (var m = 1; m <=president_keys.length; m++) {
 
 officers['president'] = most_votes;
 
-
 var vp_keys = [];
 var vp_vote_counts = [];
 
@@ -186,9 +176,6 @@ for (var key in voteCount['vicePresident']) {
   vp_keys.push(key);
   vp_vote_counts.push(voteCount['vicePresident'][key]);
 }
-
-// console.log(vp_keys);
-// console.log(vp_vote_counts);
 
 most_votes = vp_keys[0];
 max_votes = vp_vote_counts[0];
@@ -209,7 +196,6 @@ for (var key in voteCount['secretary']) {
   secretary_keys.push(key);
   secretary_vote_counts.push(voteCount['secretary'][key]);
 }
-
 
 most_votes = secretary_keys[0];
 max_votes = secretary_vote_counts[0];
@@ -242,6 +228,8 @@ for (var m = 1; m <=treasurer_keys.length; m++) {
 }
 
 officers['treasurer'] = most_votes;
+
+
 // __________________________________________
 // Refactored Solution
 
