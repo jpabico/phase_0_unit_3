@@ -89,7 +89,14 @@ show the working tree status
 	git commit -m "description"
 </code>
 
+## Reflection
 
+This cleared up some of the things about Git that I was confused about 
+at the beginning.  I am now comfortable with some of the commands since 
+I've been using them.  But there are several other commands that I still 
+haven't had a chance to use and am not entirely sure about how to use 
+them.  I would normally do some experimentation, but I'm afraid I might 
+erase or modify something accidently and won't be able to undo it.  This is a topic that I am gong to schedule a tutoring session for.
 
 
 
