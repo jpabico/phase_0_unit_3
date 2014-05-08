@@ -1,24 +1,712 @@
-<html><head><link rel="stylesheet" type="text/css" href="news.css?WYHpXE7l12wmoXJMMN3N">
-<link rel="shortcut icon" href="favicon.ico">
-<script type="text/javascript">
-function byId(id) {
-  return document.getElementById(id);
-}
+<html>
 
-function vote(node) {
-  var v = node.id.split(/_/);   // {'up', '123'}
-  var item = v[1];
+<head>
+    <link rel="stylesheet" type="text/css" href="news.css?WYHpXE7l12wmoXJMMN3N">
+    <link rel="shortcut icon" href="favicon.ico">
+    <script type="text/javascript">
+    function byId(id) {
+        return document.getElementById(id);
+    }
 
-  // hide arrows
-  byId('up_'   + item).style.visibility = 'hidden';
-  byId('down_' + item).style.visibility = 'hidden';
+    function vote(node) {
+        var v = node.id.split(/_/); // {'up', '123'}
+        var item = v[1];
 
-  // ping server
-  var ping = new Image();
-  ping.src = node.href;
+        // hide arrows
+        byId('up_' + item).style.visibility = 'hidden';
+        byId('down_' + item).style.visibility = 'hidden';
 
-  return false; // cancel browser nav
-} </script><title>Hacker News</title></head><body><center><table border=0 cellpadding=0 cellspacing=0 width="85%" bgcolor=#f6f6ef><tr><td bgcolor=#ff6600><table border=0 cellpadding=0 cellspacing=0 width="100%" style="padding:2px"><tr><td style="width:18px;padding-right:4px"><a href="http://ycombinator.com"><img src="y18.gif" width=18 height=18 style="border:1px #ffffff solid;"></img></a></td><td style="line-height:12pt; height:10px;"><span class="pagetop"><b><a href="news">Hacker News</a></b><img src="s.gif" height=1 width=10><a href="newest">new</a> | <a href="newcomments">comments</a> | <a href="ask">ask</a> | <a href="jobs">jobs</a> | <a href="submit">submit</a></span></td><td style="text-align:right;padding-right:4px;"><span class="pagetop"><a href="newslogin?whence=%6e%65%77%73">login</a></span></td></tr></table></td></tr><tr style="height:10px"></tr><tr><td><table border=0 cellpadding=0 cellspacing=0><tr><td align=right valign=top class="title">1.</td><td><center><a id=up_7713363 href="vote?for=7713363&amp;dir=up&amp;whence=%6e%65%77%73"><div class="votearrow" title="upvote"></div></a><span id=down_7713363></span></center></td><td class="title"><a href="http://www.reuters.com/article/2014/05/07/us-netneutrality-companies-idUSBREA4615420140507">Tech firms write to U.S. FCC to oppose 'net neutrality' plan</a><span class="comhead"> (reuters.com) </span></td></tr><tr><td colspan=2></td><td class="subtext"><span id=score_7713363>116 points</span> by <a href="user?id=dthal">dthal</a> 3 hours ago  | <a href="item?id=7713363">35 comments</a></td></tr><tr style="height:5px"></tr><tr><td align=right valign=top class="title">2.</td><td><center><a id=up_7713544 href="vote?for=7713544&amp;dir=up&amp;whence=%6e%65%77%73"><div class="votearrow" title="upvote"></div></a><span id=down_7713544></span></center></td><td class="title"><a href="http://mollyrocket.com/casey/stream_0006.html">Walk_monster.cpp</a><span class="comhead"> (mollyrocket.com) </span></td></tr><tr><td colspan=2></td><td class="subtext"><span id=score_7713544>50 points</span> by <a href="user?id=danso">danso</a> 2 hours ago  | <a href="item?id=7713544">4 comments</a></td></tr><tr style="height:5px"></tr><tr><td align=right valign=top class="title">3.</td><td><center><a id=up_7713192 href="vote?for=7713192&amp;dir=up&amp;whence=%6e%65%77%73"><div class="votearrow" title="upvote"></div></a><span id=down_7713192></span></center></td><td class="title"><a href="http://blog.osvdb.org/2014/05/07/the-scraping-problem-and-ethics/">The Scraping Problem and Ethics</a><span class="comhead"> (osvdb.org) </span></td></tr><tr><td colspan=2></td><td class="subtext"><span id=score_7713192>72 points</span> by <a href="user?id=codezero">codezero</a> 4 hours ago  | <a href="item?id=7713192">31 comments</a></td></tr><tr style="height:5px"></tr><tr><td align=right valign=top class="title">4.</td><td><center><a id=up_7711105 href="vote?for=7711105&amp;dir=up&amp;whence=%6e%65%77%73"><div class="votearrow" title="upvote"></div></a><span id=down_7711105></span></center></td><td class="title"><a href="https://hacks.mozilla.org/2014/05/editable-box-model-multiple-selection-sublime-text-keys-much-more-firefox-developer-tools-episode-31/">Firefox Developer Tools – Editable box model, Sublime Text keys</a><span class="comhead"> (mozilla.org) </span></td></tr><tr><td colspan=2></td><td class="subtext"><span id=score_7711105>294 points</span> by <a href="user?id=rnyman">rnyman</a> 11 hours ago  | <a href="item?id=7711105">85 comments</a></td></tr><tr style="height:5px"></tr><tr><td align=right valign=top class="title">5.</td><td><center><a id=up_7713344 href="vote?for=7713344&amp;dir=up&amp;whence=%6e%65%77%73"><div class="votearrow" title="upvote"></div></a><span id=down_7713344></span></center></td><td class="title"><a href="http://blogs.wsj.com/venturecapital/2014/05/07/google-ventures-leads-130m-round-for-big-data-medical-software-company-flatiron-health/">GV invests $130M in big data medical software startup Flatiron Health</a><span class="comhead"> (wsj.com) </span></td></tr><tr><td colspan=2></td><td class="subtext"><span id=score_7713344>41 points</span> by <a href="user?id=brandonb">brandonb</a> 3 hours ago  | <a href="item?id=7713344">3 comments</a></td></tr><tr style="height:5px"></tr><tr><td align=right valign=top class="title">6.</td><td><center><a id=up_7712971 href="vote?for=7712971&amp;dir=up&amp;whence=%6e%65%77%73"><div class="votearrow" title="upvote"></div></a><span id=down_7712971></span></center></td><td class="title"><a href="http://www.aaronkharris.com/guidelines-when-negotiating">How to create good outcomes when negotiating</a><span class="comhead"> (aaronkharris.com) </span></td></tr><tr><td colspan=2></td><td class="subtext"><span id=score_7712971>77 points</span> by <a href="user?id=katm">katm</a> 5 hours ago  | <a href="item?id=7712971">22 comments</a></td></tr><tr style="height:5px"></tr><tr><td align=right valign=top class="title">7.</td><td><center><a id=up_7712297 href="vote?for=7712297&amp;dir=up&amp;whence=%6e%65%77%73"><div class="votearrow" title="upvote"></div></a><span id=down_7712297></span></center></td><td class="title"><a href="http://pyvideo.org/video/2612/enough-machine-learning-to-make-hacker-news-reada">Enough Machine Learning to Make Hacker News Readable Again [video]</a><span class="comhead"> (pyvideo.org) </span></td></tr><tr><td colspan=2></td><td class="subtext"><span id=score_7712297>105 points</span> by <a href="user?id=Wingman4l7">Wingman4l7</a> 8 hours ago  | <a href="item?id=7712297">52 comments</a></td></tr><tr style="height:5px"></tr><tr><td align=right valign=top class="title">8.</td><td><center><a id=up_7712143 href="vote?for=7712143&amp;dir=up&amp;whence=%6e%65%77%73"><div class="votearrow" title="upvote"></div></a><span id=down_7712143></span></center></td><td class="title"><a href="http://queue.acm.org/detail.cfm?id=2591369">Decoupled from IP, TCP is at last able to support multihomed hosts</a><span class="comhead"> (acm.org) </span></td></tr><tr><td colspan=2></td><td class="subtext"><span id=score_7712143>113 points</span> by <a href="user?id=liotier">liotier</a> 8 hours ago  | <a href="item?id=7712143">21 comments</a></td></tr><tr style="height:5px"></tr><tr><td align=right valign=top class="title">9.</td><td><center><a id=up_7712328 href="vote?for=7712328&amp;dir=up&amp;whence=%6e%65%77%73"><div class="votearrow" title="upvote"></div></a><span id=down_7712328></span></center></td><td class="title"><a href="https://www.facebook.com/notes/facebook-engineering/three-optimization-tips-for-c/10151361643253920">Three Optimization Tips for C++</a><span class="comhead"> (facebook.com) </span></td></tr><tr><td colspan=2></td><td class="subtext"><span id=score_7712328>88 points</span> by <a href="user?id=JSno">JSno</a> 8 hours ago  | <a href="item?id=7712328">42 comments</a></td></tr><tr style="height:5px"></tr><tr><td align=right valign=top class="title">10.</td><td><center><a id=up_7712766 href="vote?for=7712766&amp;dir=up&amp;whence=%6e%65%77%73"><div class="votearrow" title="upvote"></div></a><span id=down_7712766></span></center></td><td class="title"><a href="https://github.com/topcloud/socketcluster">SocketCluster – WebSockets that scale to 100K messages per second on 8 cores</a><span class="comhead"> (github.com) </span></td></tr><tr><td colspan=2></td><td class="subtext"><span id=score_7712766>55 points</span> by <a href="user?id=BukhariH">BukhariH</a> 6 hours ago  | <a href="item?id=7712766">15 comments</a></td></tr><tr style="height:5px"></tr><tr><td align=right valign=top class="title">11.</td><td><center><a id=up_7713160 href="vote?for=7713160&amp;dir=up&amp;whence=%6e%65%77%73"><div class="votearrow" title="upvote"></div></a><span id=down_7713160></span></center></td><td class="title"><a href="http://www.wired.com/2014/05/formula-1-steering-wheels/?mbid=social_fb">A Look at the Formula 1 Steering Wheel</a><span class="comhead"> (wired.com) </span></td></tr><tr><td colspan=2></td><td class="subtext"><span id=score_7713160>30 points</span> by <a href="user?id=dmmalam">dmmalam</a> 4 hours ago  | <a href="item?id=7713160">16 comments</a></td></tr><tr style="height:5px"></tr><tr><td align=right valign=top class="title">12.</td><td><center><a id=up_7712599 href="vote?for=7712599&amp;dir=up&amp;whence=%6e%65%77%73"><div class="votearrow" title="upvote"></div></a><span id=down_7712599></span></center></td><td class="title"><a href="http://www.craigkerstiens.com/2014/05/07/Postgres-datatypes-the-ones-youre-not-using/">Rarely Used Postgres Datatypes</a><span class="comhead"> (craigkerstiens.com) </span></td></tr><tr><td colspan=2></td><td class="subtext"><span id=score_7712599>60 points</span> by <a href="user?id=narfz">narfz</a> 7 hours ago  | <a href="item?id=7712599">29 comments</a></td></tr><tr style="height:5px"></tr><tr><td align=right valign=top class="title">13.</td><td><center><a id=up_7712773 href="vote?for=7712773&amp;dir=up&amp;whence=%6e%65%77%73"><div class="votearrow" title="upvote"></div></a><span id=down_7712773></span></center></td><td class="title"><a href="http://puzlet.com/m/b00f5">Weierstrass functions: continuous but not differentiable anywhere</a><span class="comhead"> (puzlet.com) </span></td></tr><tr><td colspan=2></td><td class="subtext"><span id=score_7712773>48 points</span> by <a href="user?id=gballan">gballan</a> 6 hours ago  | <a href="item?id=7712773">27 comments</a></td></tr><tr style="height:5px"></tr><tr><td align=right valign=top class="title">14.</td><td><center><a id=up_7711944 href="vote?for=7711944&amp;dir=up&amp;whence=%6e%65%77%73"><div class="votearrow" title="upvote"></div></a><span id=down_7711944></span></center></td><td class="title"><a href="http://www.paintcodeapp.com/intro">PaintCode 2</a><span class="comhead"> (paintcodeapp.com) </span></td></tr><tr><td colspan=2></td><td class="subtext"><span id=score_7711944>92 points</span> by <a href="user?id=normanv">normanv</a> 9 hours ago  | <a href="item?id=7711944">59 comments</a></td></tr><tr style="height:5px"></tr><tr><td align=right valign=top class="title">15.</td><td><center><a id=up_7711200 href="vote?for=7711200&amp;dir=up&amp;whence=%6e%65%77%73"><div class="votearrow" title="upvote"></div></a><span id=down_7711200></span></center></td><td class="title"><a href="http://op-co.de/blog/posts/hacking_the_nx300/">Hacking the Samsung NX300 "Smart" Camera</a><span class="comhead"> (op-co.de) </span></td></tr><tr><td colspan=2></td><td class="subtext"><span id=score_7711200>110 points</span> by <a href="user?id=ge0rg">ge0rg</a> 11 hours ago  | <a href="item?id=7711200">43 comments</a></td></tr><tr style="height:5px"></tr><tr><td align=right valign=top class="title">16.</td><td><center><a id=up_7711364 href="vote?for=7711364&amp;dir=up&amp;whence=%6e%65%77%73"><div class="votearrow" title="upvote"></div></a><span id=down_7711364></span></center></td><td class="title"><a href="https://www.kickstarter.com/projects/waxpancake/the-return-of-upcomingorg">The Return of Upcoming.org by Andy Baio</a><span class="comhead"> (kickstarter.com) </span></td></tr><tr><td colspan=2></td><td class="subtext"><span id=score_7711364>97 points</span> by <a href="user?id=mxfh">mxfh</a> 10 hours ago  | <a href="item?id=7711364">45 comments</a></td></tr><tr style="height:5px"></tr><tr><td align=right valign=top class="title">17.</td><td></td><td class="title"><a href="https://taplytics.com/jobs" rel="nofollow">Taplytics (YC W14) is hiring a mobile engineer</a><span class="comhead"> (taplytics.com) </span></td></tr><tr><td colspan=2></td><td class="subtext">1 hour ago</td></tr><tr style="height:5px"></tr><tr><td align=right valign=top class="title">18.</td><td><center><a id=up_7712586 href="vote?for=7712586&amp;dir=up&amp;whence=%6e%65%77%73"><div class="votearrow" title="upvote"></div></a><span id=down_7712586></span></center></td><td class="title"><a href="http://packetbeat.com">Packetbeat: Open-source application monitoring</a><span class="comhead"> (packetbeat.com) </span></td></tr><tr><td colspan=2></td><td class="subtext"><span id=score_7712586>45 points</span> by <a href="user?id=mobiplayer">mobiplayer</a> 7 hours ago  | <a href="item?id=7712586">11 comments</a></td></tr><tr style="height:5px"></tr><tr><td align=right valign=top class="title">19.</td><td><center><a id=up_7713656 href="vote?for=7713656&amp;dir=up&amp;whence=%6e%65%77%73"><div class="votearrow" title="upvote"></div></a><span id=down_7713656></span></center></td><td class="title"><a href="item?id=7713656">Poll: what smartphone do you use as your primary smartphone?</a></td></tr><tr><td colspan=2></td><td class="subtext"><span id=score_7713656>40 points</span> by <a href="user?id=plg">plg</a> 1 hour ago  | <a href="item?id=7713656">55 comments</a></td></tr><tr style="height:5px"></tr><tr><td align=right valign=top class="title">20.</td><td><center><a id=up_7711514 href="vote?for=7711514&amp;dir=up&amp;whence=%6e%65%77%73"><div class="votearrow" title="upvote"></div></a><span id=down_7711514></span></center></td><td class="title"><a href="http://bost.ocks.org/mike/bubble-map/">Let’s Make a Bubble Map</a><span class="comhead"> (ocks.org) </span></td></tr><tr><td colspan=2></td><td class="subtext"><span id=score_7711514>78 points</span> by <a href="user?id=nthitz">nthitz</a> 10 hours ago  | <a href="item?id=7711514">11 comments</a></td></tr><tr style="height:5px"></tr><tr><td align=right valign=top class="title">21.</td><td><center><a id=up_7709567 href="vote?for=7709567&amp;dir=up&amp;whence=%6e%65%77%73"><div class="votearrow" title="upvote"></div></a><span id=down_7709567></span></center></td><td class="title"><a href="http://fivethirtyeight.com/features/the-story-behind-the-worst-movie-on-imdb/">The Story Behind the Worst Movie on IMDb</a><span class="comhead"> (fivethirtyeight.com) </span></td></tr><tr><td colspan=2></td><td class="subtext"><span id=score_7709567>187 points</span> by <a href="user?id=thampiman">thampiman</a> 16 hours ago  | <a href="item?id=7709567">129 comments</a></td></tr><tr style="height:5px"></tr><tr><td align=right valign=top class="title">22.</td><td><center><a id=up_7708437 href="vote?for=7708437&amp;dir=up&amp;whence=%6e%65%77%73"><div class="votearrow" title="upvote"></div></a><span id=down_7708437></span></center></td><td class="title"><a href="http://nymag.com/news/features/cancer-peter-bach-2014-5/">The Day I Started Lying to Ruth</a><span class="comhead"> (nymag.com) </span></td></tr><tr><td colspan=2></td><td class="subtext"><span id=score_7708437>510 points</span> by <a href="user?id=danielpal">danielpal</a> 1 day ago  | <a href="item?id=7708437">136 comments</a></td></tr><tr style="height:5px"></tr><tr><td align=right valign=top class="title">23.</td><td><center><a id=up_7711755 href="vote?for=7711755&amp;dir=up&amp;whence=%6e%65%77%73"><div class="votearrow" title="upvote"></div></a><span id=down_7711755></span></center></td><td class="title"><a href="https://bitbucket.org/ktg/l">L++ Language</a><span class="comhead"> (bitbucket.org) </span></td></tr><tr><td colspan=2></td><td class="subtext"><span id=score_7711755>59 points</span> by <a href="user?id=throwaway344">throwaway344</a> 9 hours ago  | <a href="item?id=7711755">32 comments</a></td></tr><tr style="height:5px"></tr><tr><td align=right valign=top class="title">24.</td><td><center><a id=up_7704859 href="vote?for=7704859&amp;dir=up&amp;whence=%6e%65%77%73"><div class="votearrow" title="upvote"></div></a><span id=down_7704859></span></center></td><td class="title"><a href="http://blog.atom.io/2014/05/06/atom-is-now-open-source.html">Atom Is Now Open Source</a><span class="comhead"> (atom.io) </span></td></tr><tr><td colspan=2></td><td class="subtext"><span id=score_7704859>835 points</span> by <a href="user?id=jordn">jordn</a> 1 day ago  | <a href="item?id=7704859">291 comments</a></td></tr><tr style="height:5px"></tr><tr><td align=right valign=top class="title">25.</td><td><center><a id=up_7713057 href="vote?for=7713057&amp;dir=up&amp;whence=%6e%65%77%73"><div class="votearrow" title="upvote"></div></a><span id=down_7713057></span></center></td><td class="title"><a href="https://en.wikipedia.org/wiki/Oh-My-God_particle">Oh-My-God particle</a><span class="comhead"> (wikipedia.org) </span></td></tr><tr><td colspan=2></td><td class="subtext"><span id=score_7713057>109 points</span> by <a href="user?id=markmassie">markmassie</a> 5 hours ago  | <a href="item?id=7713057">33 comments</a></td></tr><tr style="height:5px"></tr><tr><td align=right valign=top class="title">26.</td><td><center><a id=up_7704800 href="vote?for=7704800&amp;dir=up&amp;whence=%6e%65%77%73"><div class="votearrow" title="upvote"></div></a><span id=down_7704800></span></center></td><td class="title"><a href="http://gabrielecirulli.com/articles/2048-success-and-me">2048, success and me</a><span class="comhead"> (gabrielecirulli.com) </span></td></tr><tr><td colspan=2></td><td class="subtext"><span id=score_7704800>813 points</span> by <a href="user?id=terabytest">terabytest</a> 1 day ago  | <a href="item?id=7704800">209 comments</a></td></tr><tr style="height:5px"></tr><tr><td align=right valign=top class="title">27.</td><td><center><a id=up_7709812 href="vote?for=7709812&amp;dir=up&amp;whence=%6e%65%77%73"><div class="votearrow" title="upvote"></div></a><span id=down_7709812></span></center></td><td class="title"><a href="http://mike-barker.com/ikea/">Visualisation of the expansion of IKEA</a><span class="comhead"> (mike-barker.com) </span></td></tr><tr><td colspan=2></td><td class="subtext"><span id=score_7709812>130 points</span> by <a href="user?id=davidbarker">davidbarker</a> 15 hours ago  | <a href="item?id=7709812">102 comments</a></td></tr><tr style="height:5px"></tr><tr><td align=right valign=top class="title">28.</td><td><center><a id=up_7712512 href="vote?for=7712512&amp;dir=up&amp;whence=%6e%65%77%73"><div class="votearrow" title="upvote"></div></a><span id=down_7712512></span></center></td><td class="title"><a href="https://github.com/hal9000xp/euclid">Show HN: A minimalist event-driven (epoll) framework</a><span class="comhead"> (github.com) </span></td></tr><tr><td colspan=2></td><td class="subtext"><span id=score_7712512>29 points</span> by <a href="user?id=hal9000xp">hal9000xp</a> 7 hours ago  | <a href="item?id=7712512">12 comments</a></td></tr><tr style="height:5px"></tr><tr><td align=right valign=top class="title">29.</td><td><center><a id=up_7712684 href="vote?for=7712684&amp;dir=up&amp;whence=%6e%65%77%73"><div class="votearrow" title="upvote"></div></a><span id=down_7712684></span></center></td><td class="title"><a href="http://files.shareholder.com/downloads/ABEA-4CW8X0/2964432284x0x752463/4d500edc-fd71-4b5b-8b60-542f73d9c64e/Q1%2714%20Shareholder%20Letter%20final.pdf">Tesla Q1 earnings report [pdf]</a> [<a href="http://www.scribd.com/vacuum?url=http://files.shareholder.com/downloads/ABEA-4CW8X0/2964432284x0x752463/4d500edc-fd71-4b5b-8b60-542f73d9c64e/Q1%2714%20Shareholder%20Letter%20final.pdf">scribd</a>]<span class="comhead"> (shareholder.com) </span></td></tr><tr><td colspan=2></td><td class="subtext"><span id=score_7712684>47 points</span> by <a href="user?id=IBM">IBM</a> 6 hours ago  | <a href="item?id=7712684">42 comments</a></td></tr><tr style="height:5px"></tr><tr><td align=right valign=top class="title">30.</td><td><center><a id=up_7711497 href="vote?for=7711497&amp;dir=up&amp;whence=%6e%65%77%73"><div class="votearrow" title="upvote"></div></a><span id=down_7711497></span></center></td><td class="title"><a href="http://reason.com/archives/2014/05/07/a-short-history-of-game-panics">A Short History of Game Panics</a><span class="comhead"> (reason.com) </span></td></tr><tr><td colspan=2></td><td class="subtext"><span id=score_7711497>59 points</span> by <a href="user?id=acdanger">acdanger</a> 10 hours ago  | <a href="item?id=7711497">13 comments</a></td></tr><tr style="height:5px"></tr><tr style="height:10px"></tr><tr><td colspan=2></td><td class="title"><a href="news2">More</a></td></tr></table></td></tr><tr><td><img src="s.gif" height=10 width=0><table width="100%" cellspacing=0 cellpadding=1><tr><td bgcolor=#ff6600></td></tr></table><br>
-<center><span class="yclinks"><a href="lists">Lists</a> | <a href="rss">RSS</a> | <a href="http://ycombinator.com/bookmarklet.html">Bookmarklet</a> | <a href="http://ycombinator.com/newsguidelines.html">Guidelines</a> | <a href="http://ycombinator.com/newsfaq.html">FAQ</a> | <a href="dmca.html">DMCA</a> | <a href="http://ycombinator.com/newsnews.html">News News</a> | <a href="item?id=363">Feature Requests</a> | <a href="https://github.com/HackerNews/HN/issues">Bugs</a> | <a href="http://ycombinator.com">Y Combinator</a> | <a href="http://ycombinator.com/apply.html">Apply</a> | <a href="http://ycombinator.com/lib.html">Library</a></span><br><br>
-  <form method=get action="//hn.algolia.com/">Search: <input type=text name="q" value="" size=17></form><br>
-</center></td></tr></table></center></body></html>
+        // ping server
+        var ping = new Image();
+        ping.src = node.href;
+
+        return false; // cancel browser nav
+    }
+    </script>
+    <title>Hacker News</title>
+</head>
+
+<body>
+    <center>
+        <table border=0 cellpadding=0 cellspacing=0 width="85%" bgcolor=#f6f6ef>
+            <tr>
+                <td bgcolor=#ff6600>
+                    <table border=0 cellpadding=0 cellspacing=0 width="100%" style="padding:2px">
+                        <tr>
+                            <td style="width:18px;padding-right:4px">
+                                <a href="http://ycombinator.com">
+                                    <img src="y18.gif" width=18 height=18 style="border:1px #ffffff solid;"></img>
+                                </a>
+                            </td>
+                            <td style="line-height:12pt; height:10px;">
+                                <span class="pagetop"><b><a href="news">Hacker News</a></b>
+                                    <img src="s.gif" height=1 width=10><a href="newest">new</a> | <a href="newcomments">comments</a> | <a href="ask">ask</a> | <a href="jobs">jobs</a> | <a href="submit">submit</a>
+                                </span>
+                            </td>
+                            <td style="text-align:right;padding-right:4px;">
+                                <span class="pagetop"><a href="newslogin?whence=%6e%65%77%73">login</a>
+                                </span>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr style="height:10px"></tr>
+            <tr>
+                <td>
+                    <table border=0 cellpadding=0 cellspacing=0>
+                        <tr>
+                            <td align=right valign=top class="title">1.</td>
+                            <td>
+                                <center>
+                                    <a id=up_7713363 href="vote?for=7713363&amp;dir=up&amp;whence=%6e%65%77%73">
+                                        <div class="votearrow" title="upvote"></div>
+                                    </a>
+                                    <span id=down_7713363></span>
+                                </center>
+                            </td>
+                            <td class="title"><a href="http://www.reuters.com/article/2014/05/07/us-netneutrality-companies-idUSBREA4615420140507">Tech firms write to U.S. FCC to oppose 'net neutrality' plan</a>
+                                <span class="comhead">(reuters.com)</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan=2></td>
+                            <td class="subtext">
+                                <span id=score_7713363>116 points</span>by <a href="user?id=dthal">dthal</a> 3 hours ago | <a href="item?id=7713363">35 comments</a>
+                            </td>
+                        </tr>
+                        <tr style="height:5px"></tr>
+                        <tr>
+                            <td align=right valign=top class="title">2.</td>
+                            <td>
+                                <center>
+                                    <a id=up_7713544 href="vote?for=7713544&amp;dir=up&amp;whence=%6e%65%77%73">
+                                        <div class="votearrow" title="upvote"></div>
+                                    </a>
+                                    <span id=down_7713544></span>
+                                </center>
+                            </td>
+                            <td class="title"><a href="http://mollyrocket.com/casey/stream_0006.html">Walk_monster.cpp</a>
+                                <span class="comhead">(mollyrocket.com)</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan=2></td>
+                            <td class="subtext">
+                                <span id=score_7713544>50 points</span>by <a href="user?id=danso">danso</a> 2 hours ago | <a href="item?id=7713544">4 comments</a>
+                            </td>
+                        </tr>
+                        <tr style="height:5px"></tr>
+                        <tr>
+                            <td align=right valign=top class="title">3.</td>
+                            <td>
+                                <center>
+                                    <a id=up_7713192 href="vote?for=7713192&amp;dir=up&amp;whence=%6e%65%77%73">
+                                        <div class="votearrow" title="upvote"></div>
+                                    </a>
+                                    <span id=down_7713192></span>
+                                </center>
+                            </td>
+                            <td class="title"><a href="http://blog.osvdb.org/2014/05/07/the-scraping-problem-and-ethics/">The Scraping Problem and Ethics</a>
+                                <span class="comhead">(osvdb.org)</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan=2></td>
+                            <td class="subtext">
+                                <span id=score_7713192>72 points</span>by <a href="user?id=codezero">codezero</a> 4 hours ago | <a href="item?id=7713192">31 comments</a>
+                            </td>
+                        </tr>
+                        <tr style="height:5px"></tr>
+                        <tr>
+                            <td align=right valign=top class="title">4.</td>
+                            <td>
+                                <center>
+                                    <a id=up_7711105 href="vote?for=7711105&amp;dir=up&amp;whence=%6e%65%77%73">
+                                        <div class="votearrow" title="upvote"></div>
+                                    </a>
+                                    <span id=down_7711105></span>
+                                </center>
+                            </td>
+                            <td class="title"><a href="https://hacks.mozilla.org/2014/05/editable-box-model-multiple-selection-sublime-text-keys-much-more-firefox-developer-tools-episode-31/">Firefox Developer Tools – Editable box model, Sublime Text keys</a>
+                                <span class="comhead">(mozilla.org)</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan=2></td>
+                            <td class="subtext">
+                                <span id=score_7711105>294 points</span>by <a href="user?id=rnyman">rnyman</a> 11 hours ago | <a href="item?id=7711105">85 comments</a>
+                            </td>
+                        </tr>
+                        <tr style="height:5px"></tr>
+                        <tr>
+                            <td align=right valign=top class="title">5.</td>
+                            <td>
+                                <center>
+                                    <a id=up_7713344 href="vote?for=7713344&amp;dir=up&amp;whence=%6e%65%77%73">
+                                        <div class="votearrow" title="upvote"></div>
+                                    </a>
+                                    <span id=down_7713344></span>
+                                </center>
+                            </td>
+                            <td class="title"><a href="http://blogs.wsj.com/venturecapital/2014/05/07/google-ventures-leads-130m-round-for-big-data-medical-software-company-flatiron-health/">GV invests $130M in big data medical software startup Flatiron Health</a>
+                                <span class="comhead">(wsj.com)</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan=2></td>
+                            <td class="subtext">
+                                <span id=score_7713344>41 points</span>by <a href="user?id=brandonb">brandonb</a> 3 hours ago | <a href="item?id=7713344">3 comments</a>
+                            </td>
+                        </tr>
+                        <tr style="height:5px"></tr>
+                        <tr>
+                            <td align=right valign=top class="title">6.</td>
+                            <td>
+                                <center>
+                                    <a id=up_7712971 href="vote?for=7712971&amp;dir=up&amp;whence=%6e%65%77%73">
+                                        <div class="votearrow" title="upvote"></div>
+                                    </a>
+                                    <span id=down_7712971></span>
+                                </center>
+                            </td>
+                            <td class="title"><a href="http://www.aaronkharris.com/guidelines-when-negotiating">How to create good outcomes when negotiating</a>
+                                <span class="comhead">(aaronkharris.com)</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan=2></td>
+                            <td class="subtext">
+                                <span id=score_7712971>77 points</span>by <a href="user?id=katm">katm</a> 5 hours ago | <a href="item?id=7712971">22 comments</a>
+                            </td>
+                        </tr>
+                        <tr style="height:5px"></tr>
+                        <tr>
+                            <td align=right valign=top class="title">7.</td>
+                            <td>
+                                <center>
+                                    <a id=up_7712297 href="vote?for=7712297&amp;dir=up&amp;whence=%6e%65%77%73">
+                                        <div class="votearrow" title="upvote"></div>
+                                    </a>
+                                    <span id=down_7712297></span>
+                                </center>
+                            </td>
+                            <td class="title"><a href="http://pyvideo.org/video/2612/enough-machine-learning-to-make-hacker-news-reada">Enough Machine Learning to Make Hacker News Readable Again [video]</a>
+                                <span class="comhead">(pyvideo.org)</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan=2></td>
+                            <td class="subtext">
+                                <span id=score_7712297>105 points</span>by <a href="user?id=Wingman4l7">Wingman4l7</a> 8 hours ago | <a href="item?id=7712297">52 comments</a>
+                            </td>
+                        </tr>
+                        <tr style="height:5px"></tr>
+                        <tr>
+                            <td align=right valign=top class="title">8.</td>
+                            <td>
+                                <center>
+                                    <a id=up_7712143 href="vote?for=7712143&amp;dir=up&amp;whence=%6e%65%77%73">
+                                        <div class="votearrow" title="upvote"></div>
+                                    </a>
+                                    <span id=down_7712143></span>
+                                </center>
+                            </td>
+                            <td class="title"><a href="http://queue.acm.org/detail.cfm?id=2591369">Decoupled from IP, TCP is at last able to support multihomed hosts</a>
+                                <span class="comhead">(acm.org)</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan=2></td>
+                            <td class="subtext">
+                                <span id=score_7712143>113 points</span>by <a href="user?id=liotier">liotier</a> 8 hours ago | <a href="item?id=7712143">21 comments</a>
+                            </td>
+                        </tr>
+                        <tr style="height:5px"></tr>
+                        <tr>
+                            <td align=right valign=top class="title">9.</td>
+                            <td>
+                                <center>
+                                    <a id=up_7712328 href="vote?for=7712328&amp;dir=up&amp;whence=%6e%65%77%73">
+                                        <div class="votearrow" title="upvote"></div>
+                                    </a>
+                                    <span id=down_7712328></span>
+                                </center>
+                            </td>
+                            <td class="title"><a href="https://www.facebook.com/notes/facebook-engineering/three-optimization-tips-for-c/10151361643253920">Three Optimization Tips for C++</a>
+                                <span class="comhead">(facebook.com)</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan=2></td>
+                            <td class="subtext">
+                                <span id=score_7712328>88 points</span>by <a href="user?id=JSno">JSno</a> 8 hours ago | <a href="item?id=7712328">42 comments</a>
+                            </td>
+                        </tr>
+                        <tr style="height:5px"></tr>
+                        <tr>
+                            <td align=right valign=top class="title">10.</td>
+                            <td>
+                                <center>
+                                    <a id=up_7712766 href="vote?for=7712766&amp;dir=up&amp;whence=%6e%65%77%73">
+                                        <div class="votearrow" title="upvote"></div>
+                                    </a>
+                                    <span id=down_7712766></span>
+                                </center>
+                            </td>
+                            <td class="title"><a href="https://github.com/topcloud/socketcluster">SocketCluster – WebSockets that scale to 100K messages per second on 8 cores</a>
+                                <span class="comhead">(github.com)</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan=2></td>
+                            <td class="subtext">
+                                <span id=score_7712766>55 points</span>by <a href="user?id=BukhariH">BukhariH</a> 6 hours ago | <a href="item?id=7712766">15 comments</a>
+                            </td>
+                        </tr>
+                        <tr style="height:5px"></tr>
+                        <tr>
+                            <td align=right valign=top class="title">11.</td>
+                            <td>
+                                <center>
+                                    <a id=up_7713160 href="vote?for=7713160&amp;dir=up&amp;whence=%6e%65%77%73">
+                                        <div class="votearrow" title="upvote"></div>
+                                    </a>
+                                    <span id=down_7713160></span>
+                                </center>
+                            </td>
+                            <td class="title"><a href="http://www.wired.com/2014/05/formula-1-steering-wheels/?mbid=social_fb">A Look at the Formula 1 Steering Wheel</a>
+                                <span class="comhead">(wired.com)</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan=2></td>
+                            <td class="subtext">
+                                <span id=score_7713160>30 points</span>by <a href="user?id=dmmalam">dmmalam</a> 4 hours ago | <a href="item?id=7713160">16 comments</a>
+                            </td>
+                        </tr>
+                        <tr style="height:5px"></tr>
+                        <tr>
+                            <td align=right valign=top class="title">12.</td>
+                            <td>
+                                <center>
+                                    <a id=up_7712599 href="vote?for=7712599&amp;dir=up&amp;whence=%6e%65%77%73">
+                                        <div class="votearrow" title="upvote"></div>
+                                    </a>
+                                    <span id=down_7712599></span>
+                                </center>
+                            </td>
+                            <td class="title"><a href="http://www.craigkerstiens.com/2014/05/07/Postgres-datatypes-the-ones-youre-not-using/">Rarely Used Postgres Datatypes</a>
+                                <span class="comhead">(craigkerstiens.com)</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan=2></td>
+                            <td class="subtext">
+                                <span id=score_7712599>60 points</span>by <a href="user?id=narfz">narfz</a> 7 hours ago | <a href="item?id=7712599">29 comments</a>
+                            </td>
+                        </tr>
+                        <tr style="height:5px"></tr>
+                        <tr>
+                            <td align=right valign=top class="title">13.</td>
+                            <td>
+                                <center>
+                                    <a id=up_7712773 href="vote?for=7712773&amp;dir=up&amp;whence=%6e%65%77%73">
+                                        <div class="votearrow" title="upvote"></div>
+                                    </a>
+                                    <span id=down_7712773></span>
+                                </center>
+                            </td>
+                            <td class="title"><a href="http://puzlet.com/m/b00f5">Weierstrass functions: continuous but not differentiable anywhere</a>
+                                <span class="comhead">(puzlet.com)</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan=2></td>
+                            <td class="subtext">
+                                <span id=score_7712773>48 points</span>by <a href="user?id=gballan">gballan</a> 6 hours ago | <a href="item?id=7712773">27 comments</a>
+                            </td>
+                        </tr>
+                        <tr style="height:5px"></tr>
+                        <tr>
+                            <td align=right valign=top class="title">14.</td>
+                            <td>
+                                <center>
+                                    <a id=up_7711944 href="vote?for=7711944&amp;dir=up&amp;whence=%6e%65%77%73">
+                                        <div class="votearrow" title="upvote"></div>
+                                    </a>
+                                    <span id=down_7711944></span>
+                                </center>
+                            </td>
+                            <td class="title"><a href="http://www.paintcodeapp.com/intro">PaintCode 2</a>
+                                <span class="comhead">(paintcodeapp.com)</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan=2></td>
+                            <td class="subtext">
+                                <span id=score_7711944>92 points</span>by <a href="user?id=normanv">normanv</a> 9 hours ago | <a href="item?id=7711944">59 comments</a>
+                            </td>
+                        </tr>
+                        <tr style="height:5px"></tr>
+                        <tr>
+                            <td align=right valign=top class="title">15.</td>
+                            <td>
+                                <center>
+                                    <a id=up_7711200 href="vote?for=7711200&amp;dir=up&amp;whence=%6e%65%77%73">
+                                        <div class="votearrow" title="upvote"></div>
+                                    </a>
+                                    <span id=down_7711200></span>
+                                </center>
+                            </td>
+                            <td class="title"><a href="http://op-co.de/blog/posts/hacking_the_nx300/">Hacking the Samsung NX300 "Smart" Camera</a>
+                                <span class="comhead">(op-co.de)</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan=2></td>
+                            <td class="subtext">
+                                <span id=score_7711200>110 points</span>by <a href="user?id=ge0rg">ge0rg</a> 11 hours ago | <a href="item?id=7711200">43 comments</a>
+                            </td>
+                        </tr>
+                        <tr style="height:5px"></tr>
+                        <tr>
+                            <td align=right valign=top class="title">16.</td>
+                            <td>
+                                <center>
+                                    <a id=up_7711364 href="vote?for=7711364&amp;dir=up&amp;whence=%6e%65%77%73">
+                                        <div class="votearrow" title="upvote"></div>
+                                    </a>
+                                    <span id=down_7711364></span>
+                                </center>
+                            </td>
+                            <td class="title"><a href="https://www.kickstarter.com/projects/waxpancake/the-return-of-upcomingorg">The Return of Upcoming.org by Andy Baio</a>
+                                <span class="comhead">(kickstarter.com)</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan=2></td>
+                            <td class="subtext">
+                                <span id=score_7711364>97 points</span>by <a href="user?id=mxfh">mxfh</a> 10 hours ago | <a href="item?id=7711364">45 comments</a>
+                            </td>
+                        </tr>
+                        <tr style="height:5px"></tr>
+                        <tr>
+                            <td align=right valign=top class="title">17.</td>
+                            <td></td>
+                            <td class="title"><a href="https://taplytics.com/jobs" rel="nofollow">Taplytics (YC W14) is hiring a mobile engineer</a>
+                                <span class="comhead">(taplytics.com)</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan=2></td>
+                            <td class="subtext">1 hour ago</td>
+                        </tr>
+                        <tr style="height:5px"></tr>
+                        <tr>
+                            <td align=right valign=top class="title">18.</td>
+                            <td>
+                                <center>
+                                    <a id=up_7712586 href="vote?for=7712586&amp;dir=up&amp;whence=%6e%65%77%73">
+                                        <div class="votearrow" title="upvote"></div>
+                                    </a>
+                                    <span id=down_7712586></span>
+                                </center>
+                            </td>
+                            <td class="title"><a href="http://packetbeat.com">Packetbeat: Open-source application monitoring</a>
+                                <span class="comhead">(packetbeat.com)</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan=2></td>
+                            <td class="subtext">
+                                <span id=score_7712586>45 points</span>by <a href="user?id=mobiplayer">mobiplayer</a> 7 hours ago | <a href="item?id=7712586">11 comments</a>
+                            </td>
+                        </tr>
+                        <tr style="height:5px"></tr>
+                        <tr>
+                            <td align=right valign=top class="title">19.</td>
+                            <td>
+                                <center>
+                                    <a id=up_7713656 href="vote?for=7713656&amp;dir=up&amp;whence=%6e%65%77%73">
+                                        <div class="votearrow" title="upvote"></div>
+                                    </a>
+                                    <span id=down_7713656></span>
+                                </center>
+                            </td>
+                            <td class="title"><a href="item?id=7713656">Poll: what smartphone do you use as your primary smartphone?</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan=2></td>
+                            <td class="subtext">
+                                <span id=score_7713656>40 points</span>by <a href="user?id=plg">plg</a> 1 hour ago | <a href="item?id=7713656">55 comments</a>
+                            </td>
+                        </tr>
+                        <tr style="height:5px"></tr>
+                        <tr>
+                            <td align=right valign=top class="title">20.</td>
+                            <td>
+                                <center>
+                                    <a id=up_7711514 href="vote?for=7711514&amp;dir=up&amp;whence=%6e%65%77%73">
+                                        <div class="votearrow" title="upvote"></div>
+                                    </a>
+                                    <span id=down_7711514></span>
+                                </center>
+                            </td>
+                            <td class="title"><a href="http://bost.ocks.org/mike/bubble-map/">Let’s Make a Bubble Map</a>
+                                <span class="comhead">(ocks.org)</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan=2></td>
+                            <td class="subtext">
+                                <span id=score_7711514>78 points</span>by <a href="user?id=nthitz">nthitz</a> 10 hours ago | <a href="item?id=7711514">11 comments</a>
+                            </td>
+                        </tr>
+                        <tr style="height:5px"></tr>
+                        <tr>
+                            <td align=right valign=top class="title">21.</td>
+                            <td>
+                                <center>
+                                    <a id=up_7709567 href="vote?for=7709567&amp;dir=up&amp;whence=%6e%65%77%73">
+                                        <div class="votearrow" title="upvote"></div>
+                                    </a>
+                                    <span id=down_7709567></span>
+                                </center>
+                            </td>
+                            <td class="title"><a href="http://fivethirtyeight.com/features/the-story-behind-the-worst-movie-on-imdb/">The Story Behind the Worst Movie on IMDb</a>
+                                <span class="comhead">(fivethirtyeight.com)</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan=2></td>
+                            <td class="subtext">
+                                <span id=score_7709567>187 points</span>by <a href="user?id=thampiman">thampiman</a> 16 hours ago | <a href="item?id=7709567">129 comments</a>
+                            </td>
+                        </tr>
+                        <tr style="height:5px"></tr>
+                        <tr>
+                            <td align=right valign=top class="title">22.</td>
+                            <td>
+                                <center>
+                                    <a id=up_7708437 href="vote?for=7708437&amp;dir=up&amp;whence=%6e%65%77%73">
+                                        <div class="votearrow" title="upvote"></div>
+                                    </a>
+                                    <span id=down_7708437></span>
+                                </center>
+                            </td>
+                            <td class="title"><a href="http://nymag.com/news/features/cancer-peter-bach-2014-5/">The Day I Started Lying to Ruth</a>
+                                <span class="comhead">(nymag.com)</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan=2></td>
+                            <td class="subtext">
+                                <span id=score_7708437>510 points</span>by <a href="user?id=danielpal">danielpal</a> 1 day ago | <a href="item?id=7708437">136 comments</a>
+                            </td>
+                        </tr>
+                        <tr style="height:5px"></tr>
+                        <tr>
+                            <td align=right valign=top class="title">23.</td>
+                            <td>
+                                <center>
+                                    <a id=up_7711755 href="vote?for=7711755&amp;dir=up&amp;whence=%6e%65%77%73">
+                                        <div class="votearrow" title="upvote"></div>
+                                    </a>
+                                    <span id=down_7711755></span>
+                                </center>
+                            </td>
+                            <td class="title"><a href="https://bitbucket.org/ktg/l">L++ Language</a>
+                                <span class="comhead">(bitbucket.org)</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan=2></td>
+                            <td class="subtext">
+                                <span id=score_7711755>59 points</span>by <a href="user?id=throwaway344">throwaway344</a> 9 hours ago | <a href="item?id=7711755">32 comments</a>
+                            </td>
+                        </tr>
+                        <tr style="height:5px"></tr>
+                        <tr>
+                            <td align=right valign=top class="title">24.</td>
+                            <td>
+                                <center>
+                                    <a id=up_7704859 href="vote?for=7704859&amp;dir=up&amp;whence=%6e%65%77%73">
+                                        <div class="votearrow" title="upvote"></div>
+                                    </a>
+                                    <span id=down_7704859></span>
+                                </center>
+                            </td>
+                            <td class="title"><a href="http://blog.atom.io/2014/05/06/atom-is-now-open-source.html">Atom Is Now Open Source</a>
+                                <span class="comhead">(atom.io)</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan=2></td>
+                            <td class="subtext">
+                                <span id=score_7704859>835 points</span>by <a href="user?id=jordn">jordn</a> 1 day ago | <a href="item?id=7704859">291 comments</a>
+                            </td>
+                        </tr>
+                        <tr style="height:5px"></tr>
+                        <tr>
+                            <td align=right valign=top class="title">25.</td>
+                            <td>
+                                <center>
+                                    <a id=up_7713057 href="vote?for=7713057&amp;dir=up&amp;whence=%6e%65%77%73">
+                                        <div class="votearrow" title="upvote"></div>
+                                    </a>
+                                    <span id=down_7713057></span>
+                                </center>
+                            </td>
+                            <td class="title"><a href="https://en.wikipedia.org/wiki/Oh-My-God_particle">Oh-My-God particle</a>
+                                <span class="comhead">(wikipedia.org)</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan=2></td>
+                            <td class="subtext">
+                                <span id=score_7713057>109 points</span>by <a href="user?id=markmassie">markmassie</a> 5 hours ago | <a href="item?id=7713057">33 comments</a>
+                            </td>
+                        </tr>
+                        <tr style="height:5px"></tr>
+                        <tr>
+                            <td align=right valign=top class="title">26.</td>
+                            <td>
+                                <center>
+                                    <a id=up_7704800 href="vote?for=7704800&amp;dir=up&amp;whence=%6e%65%77%73">
+                                        <div class="votearrow" title="upvote"></div>
+                                    </a>
+                                    <span id=down_7704800></span>
+                                </center>
+                            </td>
+                            <td class="title"><a href="http://gabrielecirulli.com/articles/2048-success-and-me">2048, success and me</a>
+                                <span class="comhead">(gabrielecirulli.com)</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan=2></td>
+                            <td class="subtext">
+                                <span id=score_7704800>813 points</span>by <a href="user?id=terabytest">terabytest</a> 1 day ago | <a href="item?id=7704800">209 comments</a>
+                            </td>
+                        </tr>
+                        <tr style="height:5px"></tr>
+                        <tr>
+                            <td align=right valign=top class="title">27.</td>
+                            <td>
+                                <center>
+                                    <a id=up_7709812 href="vote?for=7709812&amp;dir=up&amp;whence=%6e%65%77%73">
+                                        <div class="votearrow" title="upvote"></div>
+                                    </a>
+                                    <span id=down_7709812></span>
+                                </center>
+                            </td>
+                            <td class="title"><a href="http://mike-barker.com/ikea/">Visualisation of the expansion of IKEA</a>
+                                <span class="comhead">(mike-barker.com)</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan=2></td>
+                            <td class="subtext">
+                                <span id=score_7709812>130 points</span>by <a href="user?id=davidbarker">davidbarker</a> 15 hours ago | <a href="item?id=7709812">102 comments</a>
+                            </td>
+                        </tr>
+                        <tr style="height:5px"></tr>
+                        <tr>
+                            <td align=right valign=top class="title">28.</td>
+                            <td>
+                                <center>
+                                    <a id=up_7712512 href="vote?for=7712512&amp;dir=up&amp;whence=%6e%65%77%73">
+                                        <div class="votearrow" title="upvote"></div>
+                                    </a>
+                                    <span id=down_7712512></span>
+                                </center>
+                            </td>
+                            <td class="title"><a href="https://github.com/hal9000xp/euclid">Show HN: A minimalist event-driven (epoll) framework</a>
+                                <span class="comhead">(github.com)</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan=2></td>
+                            <td class="subtext">
+                                <span id=score_7712512>29 points</span>by <a href="user?id=hal9000xp">hal9000xp</a> 7 hours ago | <a href="item?id=7712512">12 comments</a>
+                            </td>
+                        </tr>
+                        <tr style="height:5px"></tr>
+                        <tr>
+                            <td align=right valign=top class="title">29.</td>
+                            <td>
+                                <center>
+                                    <a id=up_7712684 href="vote?for=7712684&amp;dir=up&amp;whence=%6e%65%77%73">
+                                        <div class="votearrow" title="upvote"></div>
+                                    </a>
+                                    <span id=down_7712684></span>
+                                </center>
+                            </td>
+                            <td class="title"><a href="http://files.shareholder.com/downloads/ABEA-4CW8X0/2964432284x0x752463/4d500edc-fd71-4b5b-8b60-542f73d9c64e/Q1%2714%20Shareholder%20Letter%20final.pdf">Tesla Q1 earnings report [pdf]</a> [<a href="http://www.scribd.com/vacuum?url=http://files.shareholder.com/downloads/ABEA-4CW8X0/2964432284x0x752463/4d500edc-fd71-4b5b-8b60-542f73d9c64e/Q1%2714%20Shareholder%20Letter%20final.pdf">scribd</a>]
+                                <span class="comhead">(shareholder.com)</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan=2></td>
+                            <td class="subtext">
+                                <span id=score_7712684>47 points</span>by <a href="user?id=IBM">IBM</a> 6 hours ago | <a href="item?id=7712684">42 comments</a>
+                            </td>
+                        </tr>
+                        <tr style="height:5px"></tr>
+                        <tr>
+                            <td align=right valign=top class="title">30.</td>
+                            <td>
+                                <center>
+                                    <a id=up_7711497 href="vote?for=7711497&amp;dir=up&amp;whence=%6e%65%77%73">
+                                        <div class="votearrow" title="upvote"></div>
+                                    </a>
+                                    <span id=down_7711497></span>
+                                </center>
+                            </td>
+                            <td class="title"><a href="http://reason.com/archives/2014/05/07/a-short-history-of-game-panics">A Short History of Game Panics</a>
+                                <span class="comhead">(reason.com)</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan=2></td>
+                            <td class="subtext">
+                                <span id=score_7711497>59 points</span>by <a href="user?id=acdanger">acdanger</a> 10 hours ago | <a href="item?id=7711497">13 comments</a>
+                            </td>
+                        </tr>
+                        <tr style="height:5px"></tr>
+                        <tr style="height:10px"></tr>
+                        <tr>
+                            <td colspan=2></td>
+                            <td class="title"><a href="news2">More</a>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="s.gif" height=10 width=0>
+                    <table width="100%" cellspacing=0 cellpadding=1>
+                        <tr>
+                            <td bgcolor=#ff6600></td>
+                        </tr>
+                    </table>
+                    <br>
+                    <center>
+                        <span class="yclinks"><a href="lists">Lists</a> | <a href="rss">RSS</a> | <a href="http://ycombinator.com/bookmarklet.html">Bookmarklet</a> | <a href="http://ycombinator.com/newsguidelines.html">Guidelines</a> | <a href="http://ycombinator.com/newsfaq.html">FAQ</a> | <a href="dmca.html">DMCA</a> | <a href="http://ycombinator.com/newsnews.html">News News</a> | <a href="item?id=363">Feature Requests</a> | <a href="https://github.com/HackerNews/HN/issues">Bugs</a> | <a href="http://ycombinator.com">Y Combinator</a> | <a href="http://ycombinator.com/apply.html">Apply</a> | <a href="http://ycombinator.com/lib.html">Library</a>
+                        </span>
+                        <br>
+                        <br>
+                        <form method=get action="//hn.algolia.com/">Search:
+                            <input type=text name="q" value="" size=17>
+                        </form>
+                        <br>
+                    </center>
+                </td>
+            </tr>
+        </table>
+    </center>
+</body>
+
+</html>
