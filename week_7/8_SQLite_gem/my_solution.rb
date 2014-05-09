@@ -70,10 +70,35 @@ print_members_by_state(['NJ', 'NY', 'ME', 'FL', 'AK'])
 
 
 # REFLECTION- Include your reflection as a comment below.
-# How does the sqlite3 gem work?  What is the variable `$db` holding?  
-# Try to use your knowledge of ruby and OO to decipher this as well as h
+# How does the sqlite3 gem work?  What is the variable `$db` holding?
+
+# The sqlite3 gem allows Ruby to access the sqlite3 databse engine.  
+# The variable '$db' is holding the entire contents of the 
+# database 'congress_poll_results'
+
+# Try to use your knowledge of ruby to decipher this as well as h
 # ow the `#execute` method works.  Take a stab at explaining the line 
 # `$db.execute("SELECT name FROM congress_members WHERE years_in_congress 
 #   > #{minimum_years}")`.  Try to explain this as clearly as possible for 
 # your fellow students.  
 # If you're having trouble, find someone to pair on this explanation with you.
+
+# I think #execute is a ruby methodthat can be used to run a database query 
+#   (the argument is the query for SQL)
+# The code above says:
+# 	1) get the database stored in $db (in our case 'congress_poll_results')
+#   2) use #execute to run a query on it in SQLite
+#   3) the argument is the query asking SQLite to get then names of 
+#   congress members that have served a certain minimum number of years 
+#   (provided by the user as an argument)
+
+I think this was the most difficult challenge I have had so far during 
+Phase 0.  The syntax and logic behind SQL is different enough from
+everything else that we've done that it seems like a whole new subject 
+unto itself.  Even though I had an idea of what needed to be done, 
+I constantly had to look up stuff (mostly from w3schools.com) for syntax 
+and commands.  This took a lot of time.  I didn't attempt to do the 
+bonus section this time because of time constraints.  I will go back 
+a try it once I finish the rest of my week 9 material.
+	
+
