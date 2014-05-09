@@ -92,13 +92,13 @@ print_members_by_state(['NJ', 'NY', 'ME', 'FL', 'AK'])
 #   congress members that have served a certain minimum number of years 
 #   (provided by the user as an argument)
 
-I think this was the most difficult challenge I have had so far during 
-Phase 0.  The syntax and logic behind SQL is different enough from
-everything else that we've done that it seems like a whole new subject 
-unto itself.  Even though I had an idea of what needed to be done, 
-I constantly had to look up stuff (mostly from w3schools.com) for syntax 
-and commands.  This took a lot of time.  I didn't attempt to do the 
-bonus section this time because of time constraints.  I will go back 
-a try it once I finish the rest of my week 9 material.
+# I think this was the most difficult challenge I have had so far during 
+# Phase 0.  The syntax and logic behind SQL is different enough from
+# everything else that we've done that it seems like a whole new subject 
+# unto itself.  Even though I had an idea of what needed to be done, 
+# I constantly had to look up stuff (mostly from w3schools.com) for syntax 
+# and commands.  This took a lot of time.  I didn't attempt to do the 
+# bonus section this time because of time constraints.  I will go back 
+# a try it once I finish the rest of my week 9 material.
 	
 
